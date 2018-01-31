@@ -11,17 +11,17 @@ import CoreLocation
 
 struct Location {
     let name: String
-    let coordinates: CLLocationCoordinate2D?
+    let coordinate: CLLocationCoordinate2D?
     
-    init(name: String, coordinates: CLLocationCoordinate2D? = nil) {
+    init(name: String, coordinate: CLLocationCoordinate2D? = nil) {
         self.name = name
-        self.coordinates = coordinates
+        self.coordinate = coordinate
     }
 }
 
 extension Location : Equatable {
     public static func ==(lhs: Location, rhs: Location) -> Bool{
-        return lhs.name == rhs.name && lhs.coordinates == rhs.coordinates
+        return lhs.name == rhs.name && lhs.coordinate == rhs.coordinate
     }
 }
 

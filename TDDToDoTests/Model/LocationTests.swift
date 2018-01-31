@@ -19,15 +19,15 @@ class LocationTests: XCTestCase {
     
     func test_Init_WhenGivenCoordinates_SetsCoordinates() {
         let location = Location(name: "",
-                                coordinates: CLLocationCoordinate2D(latitude: 1, longitude: 2))
-        XCTAssertEqual(location.coordinates!, CLLocationCoordinate2DMake(1, 2))
+                                coordinate: CLLocationCoordinate2D(latitude: 1, longitude: 2))
+        XCTAssertEqual(location.coordinate!, CLLocationCoordinate2DMake(1, 2))
     }
     
     func test_Equal(){
-        let location = Location(name: "Foo", coordinates: CLLocationCoordinate2DMake(2, 3))
-        let location2 = Location(name: "Bar", coordinates: CLLocationCoordinate2DMake(0, 2))
+        let location = Location(name: "Foo", coordinate: CLLocationCoordinate2DMake(2, 3))
+        let location2 = Location(name: "Bar", coordinate: CLLocationCoordinate2DMake(0, 2))
         
-        XCTAssertEqual(location, Location(name: "Foo", coordinates: CLLocationCoordinate2DMake(2, 3)))
-        XCTAssertEqual(location2, Location(name: "Bar", coordinates: CLLocationCoordinate2DMake(0, 2)))
+        XCTAssertEqual(location, Location(name: "Foo", coordinate: CLLocationCoordinate2DMake(2, 3)))
+        XCTAssertEqual(location2, Location(name: "Bar", coordinate: CLLocationCoordinate2DMake(0, 2)))
     }
 }

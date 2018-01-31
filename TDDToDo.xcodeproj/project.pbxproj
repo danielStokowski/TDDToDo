@@ -25,6 +25,9 @@
 		3251522F2019BAF300935409 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251522E2019BAF300935409 /* ItemListDataProvider.swift */; };
 		3256D348201A4C09008AD91C /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256D347201A4C09008AD91C /* ItemListDataProviderTests.swift */; };
 		32571EDD201F0CC1000B655F /* ItemCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32571EDC201F0CC1000B655F /* ItemCellTests.swift */; };
+		32A4366020204CC10048003D /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4365F20204CC10048003D /* DetailViewControllerTests.swift */; };
+		32A4366220204D780048003D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A4366120204D780048003D /* DetailViewController.swift */; };
+		32A43665202052C80048003D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A43664202052C80048003D /* MapKit.framework */; };
 		32D7C42D201C7E4000919722 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D7C42B201C7E4000919722 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +64,9 @@
 		3251522E2019BAF300935409 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 		3256D347201A4C09008AD91C /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
 		32571EDC201F0CC1000B655F /* ItemCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemCellTests.swift; path = Controller/ItemCellTests.swift; sourceTree = "<group>"; };
+		32A4365F20204CC10048003D /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		32A4366120204D780048003D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		32A43664202052C80048003D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		32D7C42B201C7E4000919722 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A43665202052C80048003D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +117,7 @@
 				3245B6522010861C0011DC18 /* TDDToDo */,
 				3245B6672010861D0011DC18 /* TDDToDoTests */,
 				3245B6512010861C0011DC18 /* Products */,
+				32A43663202052C80048003D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,12 +156,21 @@
 			path = TDDToDoTests;
 			sourceTree = "<group>";
 		};
+		32A43663202052C80048003D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32A43664202052C80048003D /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		32D7C429201C7E0900919722 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				32456B252015D40A0014C446 /* ItemListViewController.swift */,
 				3251522E2019BAF300935409 /* ItemListDataProvider.swift */,
 				32D7C42B201C7E4000919722 /* ItemCell.swift */,
+				32A4366120204D780048003D /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -163,6 +180,7 @@
 			children = (
 				32456B232015D2E70014C446 /* ItemListViewControllerTests.swift */,
 				3256D347201A4C09008AD91C /* ItemListDataProviderTests.swift */,
+				32A4365F20204CC10048003D /* DetailViewControllerTests.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +236,11 @@
 					3245B64F2010861C0011DC18 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3245B6632010861D0011DC18 = {
 						CreatedOnToolsVersion = 9.2;
@@ -277,6 +300,7 @@
 				321EC3242013578F0006D6EF /* CLLocationCoordinate2D+Equatable.swift in Sources */,
 				321EC32220134D590006D6EF /* Location.swift in Sources */,
 				3251522F2019BAF300935409 /* ItemListDataProvider.swift in Sources */,
+				32A4366220204D780048003D /* DetailViewController.swift in Sources */,
 				321EC32A201362160006D6EF /* ItemManager.swift in Sources */,
 				324AD984201262690090F7B9 /* ToDoItem.swift in Sources */,
 			);
@@ -293,6 +317,7 @@
 				32571EDD201F0CC1000B655F /* ItemCellTests.swift in Sources */,
 				3245B6692010861D0011DC18 /* ToDoItemTests.swift in Sources */,
 				3256D348201A4C09008AD91C /* ItemListDataProviderTests.swift in Sources */,
+				32A4366020204CC10048003D /* DetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
