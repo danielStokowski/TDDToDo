@@ -21,6 +21,8 @@
 		3245B65B2010861D0011DC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3245B65A2010861D0011DC18 /* Assets.xcassets */; };
 		3245B65E2010861D0011DC18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3245B65C2010861D0011DC18 /* LaunchScreen.storyboard */; };
 		3245B6692010861D0011DC18 /* ToDoItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3245B6682010861D0011DC18 /* ToDoItemTests.swift */; };
+		3248B1A22021AB8B0098E0AF /* InputViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3248B1A12021AB8B0098E0AF /* InputViewControllerTests.swift */; };
+		32490FD02021C07000A160C4 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32490FCF2021C07000A160C4 /* InputViewController.swift */; };
 		324AD984201262690090F7B9 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AD983201262690090F7B9 /* ToDoItem.swift */; };
 		3251522F2019BAF300935409 /* ItemListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3251522E2019BAF300935409 /* ItemListDataProvider.swift */; };
 		3256D348201A4C09008AD91C /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3256D347201A4C09008AD91C /* ItemListDataProviderTests.swift */; };
@@ -60,6 +62,8 @@
 		3245B6642010861D0011DC18 /* TDDToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3245B6682010861D0011DC18 /* ToDoItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTests.swift; sourceTree = "<group>"; };
 		3245B66A2010861D0011DC18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3248B1A12021AB8B0098E0AF /* InputViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewControllerTests.swift; sourceTree = "<group>"; };
+		32490FCF2021C07000A160C4 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		324AD983201262690090F7B9 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		3251522E2019BAF300935409 /* ItemListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProvider.swift; sourceTree = "<group>"; };
 		3256D347201A4C09008AD91C /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				3251522E2019BAF300935409 /* ItemListDataProvider.swift */,
 				32D7C42B201C7E4000919722 /* ItemCell.swift */,
 				32A4366120204D780048003D /* DetailViewController.swift */,
+				32490FCF2021C07000A160C4 /* InputViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				32456B232015D2E70014C446 /* ItemListViewControllerTests.swift */,
 				3256D347201A4C09008AD91C /* ItemListDataProviderTests.swift */,
 				32A4365F20204CC10048003D /* DetailViewControllerTests.swift */,
+				3248B1A12021AB8B0098E0AF /* InputViewControllerTests.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32490FD02021C07000A160C4 /* InputViewController.swift in Sources */,
 				3245B6562010861C0011DC18 /* ViewController.swift in Sources */,
 				32D7C42D201C7E4000919722 /* ItemCell.swift in Sources */,
 				32456B262015D40A0014C446 /* ItemListViewController.swift in Sources */,
@@ -316,6 +323,7 @@
 				321EC3282013613A0006D6EF /* ItemManagerTests.swift in Sources */,
 				32571EDD201F0CC1000B655F /* ItemCellTests.swift in Sources */,
 				3245B6692010861D0011DC18 /* ToDoItemTests.swift in Sources */,
+				3248B1A22021AB8B0098E0AF /* InputViewControllerTests.swift in Sources */,
 				3256D348201A4C09008AD91C /* ItemListDataProviderTests.swift in Sources */,
 				32A4366020204CC10048003D /* DetailViewControllerTests.swift in Sources */,
 			);
